@@ -1,0 +1,21 @@
+{% include 'base/temp.html' %}
+
+{% if registered %}
+<body>
+    Welcome, you have been registered 
+</body>
+{% else %}
+<body>
+    <div class="wrapper">
+        <div class="header" style="margin-bottom: 30px;">
+            <h3>Register page</h3>
+        </div>
+        <form enctype="multipart/form-data" method="post">
+            {{form}}
+            {{port}}
+            {% csrf_token %}
+            <input class="submit-content" type="submit" value="Register">
+        </form>
+    </div>
+</body>
+{% endif %}

@@ -1,0 +1,15 @@
+{% include 'base/nav.html' %}
+<div class="wrapper">
+    <div class="header" style="margin-bottom: 30px;">
+        <h3>Login page</h3>
+    </div>
+    <form method="post">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="">
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="">
+        {% csrf_token %}
+        <input class="submit-content" type="submit" value="Login">
+    </form>
+</div>

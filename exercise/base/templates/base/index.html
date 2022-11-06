@@ -1,0 +1,10 @@
+{% include 'base/temp.html' %}
+<div class="wrapp-items">
+    <div class="text-content">
+        {% if user.is_authenticated %}
+        <h1 style="text-align: center;">Welcome to home page {{user.username}}</h1>
+        {% else %}
+        <h1 style="text-align: center;">Welcome to home page</h1>
+        {% endif %}
+    </div>
+</div>

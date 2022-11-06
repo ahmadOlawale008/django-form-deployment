@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: aliceblue;
+}
+.wrapper{
+    padding: 6px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    padding: 12px;
+    margin: auto;
+    border: 1px solid black;
+}
+.active{
+    color: black;
+    font-weight: 800;
+    font-size: 19px;
+}
+.container{
+    display: flex;
+    margin-bottom: 30px;
+    padding: 19px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(233, 231, 231);
+}
+.container h1{
+    font-size: 28px;
+    font-weight: 700;
+}
+.container a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: space-between;
+}
+li{
+    font-size: 18px;
+}
+input{
+    padding: 14px;
+    width: 60%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.589);
+    border-radius: 2px;
+    transition: all .9s ease-in-out;
+}
+input:focus{
+    background-color: #fff;
+    box-shadow: rgb(91 141 153) 0px 0px 3px 3px, rgb(6 24 44 / 65%) 0px 4px 6px -1px, rgb(255 255 255 / 8%) 0px 1px 0px inset;
+    outline: none;
+    border: rgb(19, 32, 36);
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+input[type='submit']{
+    width: 26%;
+    border: none;
+    padding: 18px;
+    background-color:  rgb(48, 89, 99);
+    transition: all .8s ease-in-out;
+    cursor: pointer;
+    border-color: .15s ease-in-out, box-shadow .15s ease-in-out;
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+}
+input[type='submit']:hover{
+    outline: none;
+    color: #000;
+    background-color: transparent;
+    border: 4px solid rgba(31, 93, 109, 0.493);
+}
+.item{
+    padding: 12px;
+}
+.errorlist li{
+    color: red;
+    font-size: 18px;
+}
+.errorlist{
+    margin-bottom: 20px;
+}
+.submit-content{
+    font-size: 17px;
+    font-weight: 600;
+}
